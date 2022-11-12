@@ -10,21 +10,16 @@ import com.google.gson.annotations.SerializedName;
 public class Bonus {
 	
 	@JsonProperty(value = "empName")
-	@SerializedName("empName")
 	public String empName;
 	@JsonProperty(value = "amount")
-	@SerializedName("amount")
 	public long amount;
 	@JsonProperty(value = "currency")
-	@SerializedName("currency")
 	public String currency;
 	@JsonProperty(value = "joiningDate")
 	@JsonFormat(pattern="MMM-dd-yyyy")
-	@SerializedName("joiningDate")
 	public Date joiningDate;
 	@JsonProperty(value = "exitDate")
 	@JsonFormat(pattern="MMM-dd-yyyy")
-	@SerializedName("exitDate")
 	public Date exitDate;
 	
 	public Bonus() {

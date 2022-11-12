@@ -56,4 +56,4 @@ public class BonusCalculatorImpl implements BonusCalculator{
 	}
 	
 
-}//(a) -> a.getJoiningDate() <= todaysDate && a.getExitDate() > todaysDate
+}
