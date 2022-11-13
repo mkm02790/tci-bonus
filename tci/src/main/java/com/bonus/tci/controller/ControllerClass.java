@@ -43,8 +43,9 @@ public class ControllerClass {
 		}
 		if(!(res==null)) 
 		{
-		return new ResponseEntity<>(res ,HttpStatus.OK);
-		}else return new ResponseEntity<>(res ,HttpStatus.INTERNAL_SERVER_ERROR);
+		    return new ResponseEntity<>(res ,HttpStatus.OK);
+		}else 
+			return new ResponseEntity<>(res ,HttpStatus.INTERNAL_SERVER_ERROR);
 		
 		
     }
