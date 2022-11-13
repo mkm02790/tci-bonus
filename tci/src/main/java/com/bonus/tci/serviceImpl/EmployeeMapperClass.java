@@ -20,9 +20,7 @@ public class EmployeeMapperClass implements EmployeeMapper {
 	public Map<String, List<Employee>> map(List<Bonus> lb) {
 		
 		Map<String, List<Employee>> map = new HashMap<String, List<Employee>>();
-		ArrayList<Employee> value = new ArrayList<>();        
-		
-	   for(Bonus bonus: lb) {	
+   	   for(Bonus bonus: lb) {	
 		 try {
 		        if(!map.containsKey(bonus.getCurrency())) {
 		            ArrayList<Employee> al = new ArrayList<Employee>();

@@ -28,9 +28,8 @@ public class BonusCalculatorImpl implements BonusCalculator{
 		Date todaysDate =new java.util.Date();
 		List<Bonus> bonusList = new ArrayList<>();
 
-//Filtration of Employee who have either exit or not yet joined WithoutWith Using Java Stream 
-		bonusList =	bn.stream().filter((a) -> todaysDate.after(a.joiningDate)).filter((a) -> todaysDate.before(a.exitDate)).collect(Collectors.toList());
-				
+//Filtration of Employee who have either exit or not yet joined With Using Java Stream 
+		bonusList =bn.stream().filter((a) -> todaysDate.after(a.joiningDate)).filter((a) -> todaysDate.before(a.exitDate)).collect(Collectors.toList());
 		if(null!=bonusList)	{
 		     try {
 			res = employeeMapper.map(bonusList);
